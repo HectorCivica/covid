@@ -1,0 +1,307 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: ""
+    tables:
+      - name: case
+        description: ""
+        columns:
+          - name: case_id
+            data_type: number
+            description: ""
+          - name: province
+            data_type: varchar
+            description: ""
+          - name: city
+            data_type: varchar
+            description: ""
+          - name: grupo
+            data_type: boolean
+            description: ""
+          - name: infection_case
+            data_type: varchar
+            description: ""
+          - name: confirmed
+            data_type: number
+            description: ""
+          - name: latitude
+            data_type: varchar
+            description: ""
+          - name: longitude
+            data_type: varchar
+            description: ""
+
+      - name: patient_info
+        description: ""
+        columns:
+          - name: patient_id
+            data_type: number
+            description: ""
+          - name: sex
+            data_type: varchar
+            description: ""
+          - name: age
+            data_type: varchar
+            description: ""
+          - name: country
+            data_type: varchar
+            description: ""
+          - name: province
+            data_type: varchar
+            description: ""
+          - name: city
+            data_type: varchar
+            description: ""
+          - name: infection_case
+            data_type: varchar
+            description: ""
+          - name: infected_by
+            data_type: varchar
+            description: ""
+          - name: contact_number
+            data_type: varchar
+            description: ""
+          - name: symptom_onset_date
+            data_type: date
+            description: ""
+          - name: confirmed_date
+            data_type: date
+            description: ""
+          - name: released_date
+            data_type: date
+            description: ""
+          - name: deceased_date
+            data_type: date
+            description: ""
+          - name: state
+            data_type: varchar
+            description: ""
+
+      - name: policy
+        description: ""
+        columns:
+          - name: policy_id
+            data_type: number
+            description: ""
+          - name: country
+            data_type: varchar
+            description: ""
+          - name: type
+            data_type: varchar
+            description: ""
+          - name: gov_policy
+            data_type: varchar
+            description: ""
+          - name: detail
+            data_type: varchar
+            description: ""
+          - name: start_date
+            data_type: date
+            description: ""
+          - name: end_date
+            data_type: date
+            description: ""
+
+      - name: region
+        description: ""
+        columns:
+          - name: code
+            data_type: number
+            description: ""
+          - name: province
+            data_type: varchar
+            description: ""
+          - name: city
+            data_type: varchar
+            description: ""
+          - name: latitude
+            data_type: number
+            description: ""
+          - name: longitude
+            data_type: number
+            description: ""
+          - name: elementary_school_count
+            data_type: number
+            description: ""
+          - name: kindergarten_count
+            data_type: number
+            description: ""
+          - name: university_count
+            data_type: number
+            description: ""
+          - name: academy_ratio
+            data_type: number
+            description: ""
+          - name: elderly_population_ratio
+            data_type: number
+            description: ""
+          - name: elderly_alone_ratio
+            data_type: number
+            description: ""
+          - name: nursing_home_count
+            data_type: number
+            description: ""
+
+      - name: search_trend
+        description: ""
+        columns:
+          - name: date
+            data_type: date
+            description: ""
+          - name: cold
+            data_type: number
+            description: ""
+          - name: flu
+            data_type: number
+            description: ""
+          - name: pneumonia
+            data_type: number
+            description: ""
+          - name: coronavirus
+            data_type: number
+            description: ""
+
+      - name: seoul_floating
+        description: ""
+        columns:
+          - name: date
+            data_type: date
+            description: ""
+          - name: hour
+            data_type: number
+            description: ""
+          - name: birth_year
+            data_type: number
+            description: ""
+          - name: sex
+            data_type: varchar
+            description: ""
+          - name: province
+            data_type: varchar
+            description: ""
+          - name: city
+            data_type: varchar
+            description: ""
+          - name: fp_num
+            data_type: number
+            description: ""
+
+      - name: time
+        description: ""
+        columns:
+          - name: date
+            data_type: date
+            description: ""
+          - name: time
+            data_type: number
+            description: ""
+          - name: test
+            data_type: number
+            description: ""
+          - name: negative
+            data_type: number
+            description: ""
+          - name: confirmed
+            data_type: number
+            description: ""
+          - name: released
+            data_type: number
+            description: ""
+          - name: deceased
+            data_type: number
+            description: ""
+
+      - name: time_age
+        description: ""
+        columns:
+          - name: date
+            data_type: date
+            description: ""
+          - name: time
+            data_type: number
+            description: ""
+          - name: age
+            data_type: varchar
+            description: ""
+          - name: confirmed
+            data_type: number
+            description: ""
+          - name: deceased
+            data_type: number
+            description: ""
+
+      - name: time_gender
+        description: ""
+        columns:
+          - name: date
+            data_type: date
+            description: ""
+          - name: time
+            data_type: number
+            description: ""
+          - name: sex
+            data_type: varchar
+            description: ""
+          - name: confirmed
+            data_type: number
+            description: ""
+          - name: deceased
+            data_type: number
+            description: ""
+
+      - name: time_province
+        description: ""
+        columns:
+          - name: date
+            data_type: date
+            description: ""
+          - name: time
+            data_type: number
+            description: ""
+          - name: province
+            data_type: varchar
+            description: ""
+          - name: confirmed
+            data_type: number
+            description: ""
+          - name: released
+            data_type: number
+            description: ""
+          - name: deceased
+            data_type: number
+            description: ""
+
+      - name: weather
+        description: ""
+        columns:
+          - name: code
+            data_type: number
+            description: ""
+          - name: province
+            data_type: varchar
+            description: ""
+          - name: date
+            data_type: date
+            description: ""
+          - name: avg_temp
+            data_type: number
+            description: ""
+          - name: min_temp
+            data_type: number
+            description: ""
+          - name: max_temp
+            data_type: number
+            description: ""
+          - name: precipitation
+            data_type: number
+            description: ""
+          - name: max_wind_speed
+            data_type: number
+            description: ""
+          - name: most_wind_direction
+            data_type: number
+            description: ""
+          - name: avg_relative_humidity
+            data_type: number
+            description: ""
